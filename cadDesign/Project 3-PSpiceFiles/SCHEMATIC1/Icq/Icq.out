@@ -1,0 +1,149 @@
+
+**** 05/10/17 19:49:45 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Icq"  [ C:\Users\Calvin\Desktop\Electronics 2\Project 3\project 3-pspicefiles\schematic1\icq.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Icq.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../project 3-pspicefiles/project 3.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Calvin\AppData\Roaming\SPB_16.6\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 5m 0 0.1m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT 3
+Q_Q1         N00379 N00240 N00452 Q2N2222
+R_RS         0 N00186  10k TC=0,0 
+C_C1         N00186 N00240  1  TC=0,0 
+R_R2         0 N00240  5k TC=0,0 
+R_R1         N00240 N00708  5k TC=0,0 
+R_R4         0 N00452  5k TC=0,0 
+C_C3         0 N00456  1  TC=0,0 
+R_R3         N00379 N00708  5k TC=0,0 
+C_C4         N00379 N00780  1  TC=0,0 
+V_V1         N00708 0 20Vdc
+I_I1         N00186 0 DC 0Adc AC 0Aac
++SIN 0 1e-6 1k 0 0 0
+R_Rl         0 N00780  100mega TC=0,0 
+R_R5         N00452 N00456  7k TC=0,0 
+
+**** RESUMING Icq.cir ****
+.END
+
+**** 05/10/17 19:49:45 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Icq"  [ C:\Users\Calvin\Desktop\Electronics 2\Project 3\project 3-pspicefiles\schematic1\icq.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+       LEVEL    1            
+          IS   14.340000E-15 
+          BF  100            
+          NF    1            
+         VAF   74            
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE   22.010000E-12 
+         VJE     .75         
+         MJE     .377        
+         CJC    7.306000E-12 
+         VJC     .75         
+         MJC     .3416       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 05/10/17 19:49:45 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Icq"  [ C:\Users\Calvin\Desktop\Electronics 2\Project 3\project 3-pspicefiles\schematic1\icq.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00186)    0.0000 (N00240)    9.9432 (N00379)   10.8320 (N00452)    9.2816     
+
+(N00456)    9.2816 (N00708)   20.0000 (N00780)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.845E-03
+
+    TOTAL POWER DISSIPATION   7.69E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/10/17 19:49:45 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Icq"  [ C:\Users\Calvin\Desktop\Electronics 2\Project 3\project 3-pspicefiles\schematic1\icq.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

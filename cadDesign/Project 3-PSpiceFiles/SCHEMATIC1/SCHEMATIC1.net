@@ -1,0 +1,15 @@
+* source PROJECT 3
+Q_Q1         N00702 N00240 N00452 Q2N2222
+R_RS         0 N00186  10k TC=0,0 
+C_C1         N00186 N00240  1  TC=0,0 
+R_R2         0 N00240  1k TC=0,0 
+R_R1         N00240 N00708  2.5k TC=0,0 
+R_R4         0 N00452  1k TC=0,0 
+C_C3         0 N00456  1  TC=0,0 
+R_R3         N00702 N00708  2.5k TC=0,0 
+C_C4         N00702 N00780  1  TC=0,0 
+V_V1         N00708 0 20Vdc
+I_I1         N00186 0 DC 0Adc AC 0Aac
++SIN 0 1e-6 1k 0 0 0
+R_Rl         0 N00780  100mega TC=0,0 
+R_R5         N00452 N00456  1k TC=0,0 
